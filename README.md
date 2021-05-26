@@ -29,3 +29,11 @@ Wheel creation — for example:
 %pip wheel --wheel-dir=./wheelhouse pymongo psycopg2 psutil
 %pip wheel --wheel-dir=./wheelhouse Fiona Shapely pyproj
 ```
+
+To enter a container to update Linux packages, eg:
+
+```
+docker exec -it -u 0  wheelbuild /bin/bash
+
+apt-get update && apt-get install -y PACKAGE
+```
