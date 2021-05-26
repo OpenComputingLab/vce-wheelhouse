@@ -12,3 +12,11 @@ Usage:
  ```
 
 *Github Pages published wheelhouse structure based by on `https://github.com/parkin/python-wheelhouse`.*
+
+
+Wheel creation — for example:
+
+```
+!mkdir -p wheelhouse
+%pip wheel --wheel-dir=./wheelhouse scipy
+```
