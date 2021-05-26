@@ -18,5 +18,14 @@ Wheel creation — for example:
 
 ```
 !mkdir -p wheelhouse
+%pip wheel --wheel-dir=./wheelhouse yarl tornado
+%pip wheel --wheel-dir=./wheelhouse PyICU Pillow PyYAML SQLAlchemy aiohttp regex
+%pip wheel --wheel-dir=./wheelhouse multidict lxml kiwisolver matplotlib
+%pip wheel --wheel-dir=./wheelhouse pandas
 %pip wheel --wheel-dir=./wheelhouse scipy
+%pip wheel --wheel-dir=./wheelhouse h5py
+%pip wheel --wheel-dir=./wheelhouse scikit_learn
+%pip wheel --wheel-dir=./wheelhouse numexpr tables statsmodels
+%pip wheel --wheel-dir=./wheelhouse pymongo psycopg2 psutil
+%pip wheel --wheel-dir=./wheelhouse Fiona Shapely pyproj
 ```
