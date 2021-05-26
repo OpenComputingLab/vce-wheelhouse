@@ -25,6 +25,7 @@ Wheel creation — for example:
 %pip wheel --wheel-dir=./wheelhouse scipy
 %pip wheel --wheel-dir=./wheelhouse h5py
 %pip wheel --wheel-dir=./wheelhouse scikit_learn
+%pip wheel --wheel-dir=./wheelhouse psycopg2-binary
 %pip wheel --wheel-dir=./wheelhouse numexpr tables statsmodels
 %pip wheel --wheel-dir=./wheelhouse pymongo psycopg2 psutil
 %pip wheel --wheel-dir=./wheelhouse Fiona Shapely pyproj
