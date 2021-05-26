@@ -28,6 +28,7 @@ Wheel creation — for example:
 %pip wheel --wheel-dir=./wheelhouse numexpr tables statsmodels
 %pip wheel --wheel-dir=./wheelhouse pymongo psycopg2 psutil
 %pip wheel --wheel-dir=./wheelhouse Fiona Shapely pyproj
+%pip wheel --wheel-dir=./wheelhouse Fiona Shapely pynacl geopandas
 ```
 
 To enter a container to update Linux packages, eg:
