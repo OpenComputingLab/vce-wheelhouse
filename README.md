@@ -32,6 +32,22 @@ Wheel creation — for example:
 %pip wheel --wheel-dir=./wheelhouse Fiona Shapely pynacl geopandas
 ```
 
+Requirements:
+
+```
+apt-get update && \
+    apt-get install -y --no-install-recommends ffmpeg dvipng cm-super && \
+    # Pillow support? libblis2-serial <-> libblis3-serial
+    apt-get install -y libopenblas-dev libblis3-serial libjpeg-dev zlib1g-dev libfreetype6-dev libopenjp2-7 libtiff5
+    
+apt-get install -y --no-install-recommends ffmpeg dvipng cm-super && \
+    apt-get install --upgrade -y libhdf5-dev gfortran libatlas-base-dev libopenblas-dev liblapack-dev
+
+apt-get update && apt-get install -y libproj-dev \
+  gdal-bin \
+  libgdal-dev
+```
+
 To enter a container to update Linux packages, eg:
 
 ```
