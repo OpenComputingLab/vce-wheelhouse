@@ -54,6 +54,12 @@ apt-get update && apt-get install -y libproj-dev \
   libicu-dev
 ```
 
+Building `scipy` requies a fortran compiler:
+
+```
+apt-get update &&  apt-get install -y gfortran
+```
+
 Building `cryptography` Python package requires *rust* and other edpendencies:
 
 ```
