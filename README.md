@@ -54,6 +54,12 @@ apt-get update && apt-get install -y libproj-dev \
   libicu-dev
 ```
 
+Building `cryptography` Python package requires *rust* and other edpendencies:
+
+```
+apt-get update &&  apt-get install -y build-essential libssl-dev libffi-dev python3-dev cargo
+```
+
 To create a wheelhouse index file based on the wheels in a directory, there's a function in the `index_builder.ipynb` notebook. The wheelhouse itself can be published via Github Pages.
 
 To enter a container to update Linux packages, eg:
