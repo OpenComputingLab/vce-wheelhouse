@@ -46,6 +46,12 @@ apt-get install -y --no-install-recommends ffmpeg dvipng cm-super && \
 apt-get update && apt-get install -y libproj-dev \
   gdal-bin \
   libgdal-dev
+  
+# geo
+apt-get update && apt-get install -y libproj-dev \
+  gdal-bin \
+  libgdal-dev \
+  libicu-dev
 ```
 
 To create a wheelhouse index file based on the wheels in a directory, there's a function in the `index_builder.ipynb` notebook. The wheelhouse itself can be published via Github Pages.
