@@ -32,7 +32,7 @@ Wheel creation — for example:
 %pip wheel --wheel-dir=./wheelhouse Fiona Shapely pynacl geopandas
 ```
 
-Requirements:
+Requirements for VCE wheels:
 
 ```
 apt-get update && \
@@ -46,7 +46,21 @@ apt-get install -y --no-install-recommends ffmpeg dvipng cm-super && \
 apt-get update && apt-get install -y libproj-dev \
   gdal-bin \
   libgdal-dev
+  
+# geo
+apt-get update && apt-get install -y libproj-dev \
+  gdal-bin \
+  libgdal-dev \
+  libicu-dev
 ```
+
+Building `cryptography` Python package requires *rust* and other edpendencies:
+
+```
+apt-get update &&  apt-get install -y build-essential libssl-dev libffi-dev python3-dev cargo
+```
+
+To create a wheelhouse index file based on the wheels in a directory, there's a function in the `index_builder.ipynb` notebook. The wheelhouse itself can be published via Github Pages.
 
 To enter a container to update Linux packages, eg:
 
